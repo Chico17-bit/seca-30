@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seca Rápida - Emagreça em 30 Dias</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #2ecc71, #27ae60);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.3em;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .mockup, .video, .testemunhos, .features, .cta {
+      margin-top: 50px;
+    }
+    .mockup img, .testemunhos img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .video iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .cta {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .cta a {
+      background: #27ae60;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s ease;
+    }
+    .cta a:hover {
+      background: #219150;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Seca Rápida</h1>
+    <p>Emagreça de forma saudável em apenas 30 dias!</p>
+  </header>
+
+  <div class="container">
+
+    <!-- MOCKUP DO EBOOK -->
+    <div class="mockup">
+      <h2 style="text-align: center;">📘 O Seu Guia Completo de Emagrecimento</h2>
+      <img src="https://via.placeholder.com/600x800?text=Mockup+do+Ebook" alt="Mockup do Ebook Seca Rápida">
+    </div>
+
+    <!-- VÍDEO INCORPORADO -->
+    <div class="video">
+      <h2 style="text-align: center;">🎥 Vídeo: Como Emagrecer de Forma Inteligente</h2>
+      <iframe src="https://www.youtube.com/embed/1ZB2UoGzQ8U" 
+        title="Como Emagrecer de Forma Sustentável" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- TESTEMUNHOS -->
+    <div class="testemunhos">
+      <h2 style="text-align: center;">💬 Resultados Reais</h2>
+      <img src="https://via.placeholder.com/600x400?text=Antes+e+Depois+1" alt="Resultado 1">
+      <img src="https://via.placeholder.com/600x400?text=Antes+e+Depois+2" alt="Resultado 2" style="margin-top: 20px;">
+    </div>
+
+    <!-- BENEFÍCIOS -->
+    <div class="features">
+      <div class="feature">
+        <h3>📅 Plano de 30 Dias</h3>
+        <p>Receitas diárias para almoço e jantar, pensadas para emagrecer sem passar fome.</p>
+      </div>
+      <div class="feature">
+        <h3>🔥 Acelere o Metabolismo</h3>
+        <p>Coma melhor, mova-se mais e veja os resultados em poucas semanas.</p>
+      </div>
+      <div class="feature">
+        <h3>🍽️ Sem Dietas Malucas</h3>
+        <p>Alimentação de verdade, simples e acessível. Reeducação alimentar de forma leve.</p>
+      </div>
+    </div>
+
+    <!-- CHAMADA À AÇÃO -->
+    <div class="cta">
+      <h2>🚀 Está pronto para transformar o seu corpo?</h2>
+      <p>Comece agora o seu plano com o nosso e-book completo.</p>
+      <a href="https://hotmart.com" target="_blank">Quero Emagrecer Agora</a>
+    </div>
+
+  </div>
+</body>
+</html>
