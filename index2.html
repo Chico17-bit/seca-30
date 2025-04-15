@@ -1,168 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seca Rápida - Emagreça com Saúde</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seca Rápida - Emagreça em 30 Dias</title>
   <style>
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: #ffffff;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
       color: #333;
     }
     header {
-      background: linear-gradient(135deg, #27ae60, #2ecc71);
+      background: linear-gradient(to right, #2ecc71, #27ae60);
       color: white;
-      padding: 60px 20px;
       text-align: center;
+      padding: 50px 20px;
     }
     header h1 {
-      font-size: 3em;
+      font-size: 2.8em;
       margin-bottom: 10px;
     }
     header p {
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 30px 20px;
     }
-    .mockup {
-      text-align: center;
-      margin-bottom: 40px;
+    .mockup, .video, .testemunhos, .features, .cta {
+      margin-top: 50px;
     }
-    .mockup img {
-      width: 300px;
-      border-radius: 15px;
-      box-shadow: 0 0 25px rgba(0,0,0,0.1);
-    }
-    .benefits {
-      margin-bottom: 50px;
-    }
-    .benefits h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-    .benefits ul {
-      list-style: none;
-      padding-left: 0;
-      max-width: 700px;
-      margin: auto;
-    }
-    .benefits li {
-      margin: 15px 0;
-      font-size: 1.1em;
-      padding-left: 25px;
-      position: relative;
-    }
-    .benefits li::before {
-      content: '✔';
-      color: #27ae60;
-      position: absolute;
-      left: 0;
-    }
-    .cta-button {
+    .mockup img, .testemunhos img {
+      width: 100%;
+      max-width: 600px;
       display: block;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .video iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .cta {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .cta a {
       background: #27ae60;
       color: white;
-      text-align: center;
-      font-size: 1.3em;
-      font-weight: bold;
-      padding: 20px;
-      margin: 40px auto;
-      width: fit-content;
-      border-radius: 50px;
+      padding: 15px 30px;
+      font-size: 1.2em;
       text-decoration: none;
-      transition: 0.3s;
+      border-radius: 10px;
+      transition: background 0.3s ease;
     }
-    .cta-button:hover {
-      background: #1e8449;
-    }
-    .testimonials {
-      background: #f7f7f7;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .testimonials h2 {
-      font-size: 2em;
-      margin-bottom: 40px;
-    }
-    .testimonial {
-      display: inline-block;
-      width: 280px;
-      margin: 20px;
-      vertical-align: top;
-    }
-    .testimonial img {
-      width: 100%;
-      border-radius: 15px;
-      margin-bottom: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .testimonial p {
-      font-size: 0.95em;
-      color: #555;
-    }
-    footer {
-      background: #2ecc71;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9em;
+    .cta a:hover {
+      background: #219150;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Seca Rápida</h1>
-    <p>Transforma o teu corpo em apenas 30 dias com um método simples, leve e saudável.</p>
+    <p>Emagreça de forma saudável em apenas 30 dias!</p>
   </header>
 
-  <section class="container">
+  <div class="container">
+
+    <!-- MOCKUP DO EBOOK -->
     <div class="mockup">
-      <img src="https://via.placeholder.com/300x420.png?text=Ebook+Seca+R%C3%A1pida" alt="Mockup do Ebook">
+      <h2 style="text-align: center;">📘 O Seu Guia Completo de Emagrecimento</h2>
+      <img src="https://via.placeholder.com/600x800?text=Mockup+do+Ebook" alt="Mockup do Ebook Seca Rápida">
     </div>
 
-    <div class="benefits">
-      <h2>O que vais encontrar:</h2>
-      <ul>
-        <li>Plano alimentar completo com 30 dias de refeições</li>
-        <li>Receitas simples, saborosas e saudáveis</li>
-        <li>Exercícios práticos para fazer em casa</li>
-        <li>Bônus exclusivos e materiais extras</li>
-        <li>Resultados reais, com foco em saúde e bem-estar</li>
-      </ul>
+    <!-- VÍDEO INCORPORADO -->
+    <div class="video">
+      <h2 style="text-align: center;">🎥 Vídeo: Como Emagrecer de Forma Inteligente</h2>
+      <iframe src="https://www.youtube.com/embed/1ZB2UoGzQ8U" 
+        title="Como Emagrecer de Forma Sustentável" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
     </div>
 
-    <a class="cta-button" href="https://hotmart.com/link-do-produto" target="_blank">Quero Começar Agora!</a>
-  </section>
+    <!-- TESTEMUNHOS -->
+    <div class="testemunhos">
+      <h2 style="text-align: center;">💬 Resultados Reais</h2>
+      <img src="https://via.placeholder.com/600x400?text=Antes+e+Depois+1" alt="Resultado 1">
+      <img src="https://via.placeholder.com/600x400?text=Antes+e+Depois+2" alt="Resultado 2" style="margin-top: 20px;">
+    </div>
 
-  <section class="testimonials">
-    <h2>Resultados de Quem Já Usou</h2>
-    <div class="testimonial">
-      <img src="https://via.placeholder.com/280x360.png?text=Antes+e+Depois+1" alt="Antes e Depois 1">
-      <p>"Perdi 6kg em 1 mês e nunca me senti tão bem!"</p>
+    <!-- BENEFÍCIOS -->
+    <div class="features">
+      <div class="feature">
+        <h3>📅 Plano de 30 Dias</h3>
+        <p>Receitas diárias para almoço e jantar, pensadas para emagrecer sem passar fome.</p>
+      </div>
+      <div class="feature">
+        <h3>🔥 Acelere o Metabolismo</h3>
+        <p>Coma melhor, mova-se mais e veja os resultados em poucas semanas.</p>
+      </div>
+      <div class="feature">
+        <h3>🍽️ Sem Dietas Malucas</h3>
+        <p>Alimentação de verdade, simples e acessível. Reeducação alimentar de forma leve.</p>
+      </div>
     </div>
-    <div class="testimonial">
-      <img src="https://via.placeholder.com/280x360.png?text=Antes+e+Depois+2" alt="Antes e Depois 2">
-      <p>"O plano é fácil de seguir e realmente funciona."</p>
-    </div>
-    <div class="testimonial">
-      <img src="https://via.placeholder.com/280x360.png?text=Antes+e+Depois+3" alt="Antes e Depois 3">
-      <p>"Minha energia e autoestima estão no topo!"</p>
-    </div>
-  </section>
 
-  <footer>
-    &copy; 2025 Seca Rápida. Todos os direitos reservados.
-  </footer>
+    <!-- CHAMADA À AÇÃO -->
+    <div class="cta">
+      <h2>🚀 Está pronto para transformar o seu corpo?</h2>
+      <p>Comece agora o seu plano com o nosso e-book completo.</p>
+      <a href="https://hotmart.com" target="_blank">Quero Emagrecer Agora</a>
+    </div>
+
+  </div>
 </body>
 </html>
